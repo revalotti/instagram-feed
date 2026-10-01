@@ -1,0 +1,97 @@
+PROTOTIPO DE PERFIL · DEIL
+
+1. Abre index-instagram-feed-prototype.html en Chrome, Safari, Edge o Firefox.
+2. El faldón inferior contiene «Prototipo por DEIL», el cambio Claro/Oscuro
+   y el botón «Editar prototipo».
+3. En Perfil, sustituye avatar, usuario, nombre, biografía y métricas.
+4. En Publicaciones, añade, edita, elimina y ordena imágenes, carruseles o Reels.
+   Puedes subir imágenes o añadir URLs/rutas. La primera imagen es la portada.
+   Los carruseles admiten varias imágenes; los Reels admiten vídeo MP4/WebM.
+   Los Reels de la plantilla original solo tenían una portada: añade un vídeo
+   para reproducirlos. Los carruseles de demostración utilizan una segunda
+   imagen tomada del contenido original para permitir probar su navegación.
+5. En Historias y destacados, añade un nombre y una o varias imágenes.
+   Las historias se abren pulsando el avatar; los destacados pulsando su portada.
+   Avanzan cada 6 segundos. Puedes pausar, retroceder y avanzar. No caducan.
+6. En Importar / exportar, elige «Descargar versión para cliente» o «Descargar copia editable».
+   También puedes importar y exportar los datos como JSON.
+
+GUARDADO Y CLIENTES
+Los cambios se guardan en este navegador cuando su almacenamiento está disponible.
+Los archivos grandes pueden superar la capacidad local: aparecerá un aviso.
+Exporta siempre el HTML antes de cerrar si aparece ese aviso, y al terminar un cliente.
+Cada HTML exportado crea una copia independiente con su propio identificador.
+Las imágenes/vídeos subidos se incluyen en el HTML. Los recursos por URL necesitan
+conexión; las rutas relativas necesitan los archivos en su ubicación correspondiente.
+Límite de subida: 25 MB por archivo. Para vídeos mayores, usa una URL o ruta local.
+La elección Claro/Oscuro se recuerda en el navegador y se incluye en el HTML exportado.
+
+PERSONALIZACIÓN DIRECTA
+Dentro del HTML, busca «const PROFILE =». Se conserva la estructura del original:
+  username, displayName, category, bio (lista de líneas), website,
+  followers, following, avatar, feed, highlights.
+Se añaden stories, highlightLayout ('circles' o 'tab') y projectId.
+Cada publicación admite:
+  image: portada
+  images: lista de imágenes para el carrusel
+  type: 'image', 'carousel' o 'reel'
+  video: URL o ruta del vídeo del Reel (opcional)
+  caption, alt, likes, comments, date, tagged, position
+Cada historia/destacado admite title, image e images.
+El número de publicaciones se calcula a partir de feed.
+Si editas PROFILE después de haber usado el panel, cambia también projectId
+para que el borrador anterior del navegador no sustituya los nuevos datos.
+
+ALCANCE
+Prototipo local para presentar diseños. No conecta con Instagram ni publica allí.
+Me gusta, guardados, seguimiento y comentarios son interacciones de demostración;
+se reinician al abrir otra sesión. Las métricas se editan desde el panel.
+Se mantienen las fotos de demostración del original, alojadas en Unsplash.
+No se han incluido credenciales, analítica ni servicios externos de edición.
+
+FIDELIDAD
+Se parte del HTML suministrado, conservando su estructura de perfil y navegación.
+Se actualizan miniaturas a 3:4, espaciados, pestañas, iconos y disposición móvil.
+Instagram utiliza variantes por dispositivo y cuenta: el panel permite elegir
+entre destacados en círculos o en pestaña. No se afirma identidad píxel a píxel
+con todas las variantes de Instagram.
+Referencia del cambio de cuadrícula y destacados:
+https://www.lindseygamble.com/blog/instagram-profile-updates
+
+VALIDACIÓN
+Comprobados: inicio, claro/oscuro y preferencia, carrusel, modal, edición segura del
+perfil, alta/edición/borrado de publicaciones e historias, destacados, filtro de
+Reels, guardado, exportación HTML y reapertura sin duplicar controles.
+Las pruebas se ejecutaron sobre el documento, sin renderizado visual.
+La inspección visual automática
+no está disponible en esta sesión porque el navegador bloquea abrir archivos locales.
+
+ACTUALIZACIÓN: ENTREGA AL CLIENTE Y MARCA
+- «Ocultar editor · vista cliente» permite revisar la presentación y regresar
+  mediante «Volver al editor». Esta opción pertenece a tu copia de trabajo.
+- «Exportar para cliente» descarga una copia que elimina el panel del documento
+  al abrirse y desactiva todos los accesos de edición de la interfaz.
+- La copia para cliente conserva el modo claro/oscuro y los visores de contenido.
+- Esto es una separación de interfaz, no una protección del código fuente HTML.
+- Se incluye prototipo-cliente.html como ejemplo de entrega sin editor.
+
+IDENTIDAD DE DEIL
+Faldón basado en los archivos del proyecto «Create DEIL responsive website»:
+wordmark.svg, DM Sans 400, negro #0b0b0b y blanco cálido #f5f3ef.
+La tipografía y el SVG están incrustados en el HTML y no dependen de una conexión.
+
+RECURSOS DE INSTAGRAM
+Wordmark y recursos SVG obtenidos de la web pública de Instagram el 30/09/2026:
+https://www.instagram.com/
+Se conservan los trazados y viewBox del wordmark y de los recursos de cámara,
+corazón, Reels, búsqueda, carrusel, añadir, enviar, seguir, opciones, Threads,
+retroceder y cerrar. Los restantes iconos son reproducciones vectoriales.
+Los trazados de marca se usan en el prototipo identificado como DEIL.
+Referencia oficial de marca:
+https://www.meta.com/brand/resources/instagram/instagram-brand/
+No se ha verificado coincidencia píxel a píxel con una cuenta/dispositivo concreto;
+para ello hace falta una captura de esa versión de Instagram.
+
+Verificado adicionalmente: ocultar y restaurar el editor, exportar para cliente,
+ausencia del panel en la copia de cliente, bloqueo de los accesos de edición,
+modo claro/oscuro y apertura de publicaciones en la copia de cliente.
