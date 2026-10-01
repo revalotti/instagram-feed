@@ -1,0 +1,44 @@
+LA MESA ALTA · PROPUESTA DE FEED
+
+Versión cliente: lamesaalta-cliente.html
+Versión editable: lamesaalta-editable.html
+Los enlaces anteriores prototipo-cliente.html e index-instagram-feed-prototype.html
+se han actualizado también.
+
+Perfil: lamesaalta_, logo aportado, 225 seguidores y 10 seguidos según la captura.
+La cuadrícula muestra las 11 piezas propuestas, por eso el contador indica 11.
+Todos los PNG están incluidos sin alterar sus píxeles; no necesitan conexión.
+
+Orden visible (más reciente arriba):
+1. Próximo desplazamiento a Albacete (nuevo).
+2. Los peñistas Antonio, Isabel y Javier.
+3. Resultado Córdoba 1–1 Tenerife (nuevo).
+4. Hoy juega nuestro Cordobita, Córdoba–Tenerife (sustituido).
+5. Previa Córdoba–Tenerife con aficionados (sustituido).
+6. El próximo en el templo, Córdoba–Tenerife (sustituido).
+7. Recuerdo histórico Nàstic–Córdoba.
+8. Camiseta blanca / merchandising.
+9. Nuestra gente peñista, socio 01.
+10. Comunicado oficial.
+11. Presentación de Peña Cordobesista La Mesa Alta (nuevo).
+
+Es una secuencia editorial de demostración: anuncio → previa → día de partido →
+resultado → siguiente desplazamiento. No se han inventado fechas de publicación
+ni se ha interpretado la fecha de la foto histórica como fecha de publicación.
+Las piezas sin fecha pueden reordenarse en el editor.
+
+Móvil: cabecera, nombre junto al avatar, estadísticas, biografía, botones y
+cuadrícula adaptados a la captura aportada, con miniaturas 3:4.
+Faldón: «Prototipo por Revalotti», más alto y con área segura para móviles.
+El interruptor de modo oscuro tiene semántica de switch, estado accesible,
+control con teclado y zona de pulsación de 48 px.
+La copia cliente conserva oculto el editor; la editable permite ocultarlo y exportar.
+
+Verificados el arranque, las 11 imágenes, la integridad de los seis PNG nuevos,
+los datos de perfil, la ausencia de editor en cliente, la firma, ambos estados del
+interruptor y el visor de publicaciones. La inspección visual automática sigue
+limitada por el bloqueo del navegador a archivos locales en esta sesión.
+
+Las imágenes incrustadas hacen que el archivo supere la cuota habitual de
+almacenamiento local. Si editas y aparece el aviso de almacenamiento, descarga
+el HTML desde el editor antes de cerrar para conservar los cambios.
